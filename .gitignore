@@ -1,0 +1,6 @@
+.DS_Store
+*.sw[op]
+node_modules/
+npm-debug.log
+jest/
+

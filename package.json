@@ -1,0 +1,48 @@
+{
+  "name": "stylelint-config-dnunez24",
+  "version": "0.1.0",
+  "description": "My stylelint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnunez24/stylelint-config.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "styleguide",
+    "stylelint"
+  ],
+  "author": "David Nuñez <david.nunez@alumni.stanford.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnunez24/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/dnunez24/stylelint-config#readme",
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "stylelint": "^7.9.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.3.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.9.0"
+  },
+  "stylelint": {
+    "extends": "."
+  },
+  "jest": {
+    "setupFiles": [
+      "./__tests__/setup/test-helper.js"
+    ],
+    "testPathIgnorePatterns": [
+      "__tests__/setup/"
+    ],
+    "testEnvironment": "node"
+  }
+}
